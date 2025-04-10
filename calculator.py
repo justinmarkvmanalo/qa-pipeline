@@ -1,5 +1,6 @@
-class Calculator:
+import math
 
+class Calculator:
     def add(self, a, b):
         return a + b
 
@@ -21,3 +22,9 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot perform modulus by zero.")
         return a % b
+
+    def sqrt(self, a):
+        if a < 0:
+            raise ValueError("Cannot calculate the square root of a negative number.")
+        return math.sqrt(a)
+    
