@@ -9,7 +9,7 @@ class TestAgeClassifier(unittest.TestCase):
 
     def test_toddler_age(self):
         self.assertEqual(self.age_classifier.classify_age(2), "Toddler")
-        self.assertEqual(self.age_classifier.classify_age(5), "Toddler")
+        self.assertEqual(self.age_classifier.classify_age(4), "Toddler")
 
     def test_child_age(self):
         self.assertEqual(self.age_classifier.classify_age(5), "Child")
